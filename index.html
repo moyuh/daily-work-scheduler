@@ -23,17 +23,25 @@
   </head>
 
   <body>
-  <section class="container-fluid my-3">
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-  </section>
+    <section class="container-fluid my-3">
+      <header class="jumbotron">
+        <h1 class="display-3 mx-auto" style = "width:fit-content;">Work Day Scheduler</h1>
+        <p class="lead mx-auto" style = "width:fit-content;">A simple calendar app for scheduling your work day</p>
+        <p id="currentDay" class="lead mx-auto" style = "width:fit-content;"></p>
+      </header>
+    </section>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div class="row">
+          <div class="input-group col-10 mb-3 mr-0">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">9:00</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <button class="col-2 ml-0" style ="height: fit-content; width: fit-content; border:  4px solid black; border-radius: 2px;">Send!</button> 
+      </div>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
