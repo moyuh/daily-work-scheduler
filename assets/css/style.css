@@ -4,8 +4,8 @@ body {
   line-height: 1;
 }
 
-textarea {
-  background: transparent;
+.textarea {
+  background-color: transparent black;
   border: none;
   resize: none;
   color: #000000;
@@ -15,7 +15,7 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: transparent black; 
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
