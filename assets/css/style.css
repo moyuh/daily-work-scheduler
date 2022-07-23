@@ -12,6 +12,11 @@ body {
   margin-left: 20px;
 }
 
+.class {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
 .jumbotron {
   text-align: center;
   background-color: transparent black; 
@@ -27,6 +32,7 @@ body {
 .time-block {
   text-align: center;
   border-radius: 15px;
+  margin-left: 5%;
 }
 
 .row {

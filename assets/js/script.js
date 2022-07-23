@@ -10,14 +10,15 @@ let container = document.querySelector(".container");
 let input = document.querySelector(".text-area");
 let timeStamp = document.querySelectorAll(".time-stamp");
 let timeNow = document.getElementById("timeNow");
+let addedAlert = document.querySelector(".added");
 
-moment()
-  .add(7, "days")
-  .subtract(1, "months")
-  .year(2009)
-  .hours(0)
-  .minutes(0)
-  .seconds(0);
+// moment()
+//   .add(7, "days")
+//   .subtract(1, "months")
+//   .year(2009)
+//   .hours(0)
+//   .minutes(0)
+//   .seconds(0);
 // let saveBtn = document.getElementById("save-text");
 // saveBtn.addEventListener("click", test)
 // function test(event) {
@@ -91,7 +92,8 @@ function test(event) {
         "1600",
         event.target.previousElementSibling.children[1].value
       );
-    }
+    } 
+   addedAlert.textContent= "🥰 Appointment added to local storage 🥰";
   }
 }
 //on open page GET items from local storage and show on schedule
