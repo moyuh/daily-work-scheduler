@@ -9,6 +9,7 @@ let btn = document.querySelectorAll(".saveBtn");
 let container = document.querySelector(".container");
 let input = document.querySelector(".text-area");
 let timeStamp = document.querySelectorAll(".time-stamp");
+let timeNow = document.getElementById("timeNow");
 
 moment()
   .add(7, "days")
@@ -111,9 +112,9 @@ let pasteData = function () {
 let colorCode = function () {
   console.log(timeStamp[0]);
   for (let i = 0; i < timeStamp.length; i++) {
-    if (timeStamp[i].textContent == currentTime) {
+    if (timeStamp[i].textContent === timeNow.textContent) {
       timeStamp[i].parentElement.nextElementSibling.classList.add("present");
-    } else if (timeStamp[i].textContent > currentTime) {
+    } else if (timeStamp[i].textContent < timeNow.textContent) {
       timeStamp[i].parentElement.nextElementSibling.classList.add("past");
     } else {
       timeStamp[i].parentElement.nextElementSibling.classList.add("future");
