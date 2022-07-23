@@ -20,6 +20,6 @@ https://moyuh.github.io/daily-work-scheduler/
 
 ### Screenshot and GIF of Webpage
 Image:
-<img src="daily-work-scheduler/assets/images/full-screen.png">
+<img src="assets/images/full-screen.png">
 GIF:
-<img src= "daily-work-scheduler/assets/images/scheduler (1).gif">
+<img src= "assets/images/scheduler (1).gif">
