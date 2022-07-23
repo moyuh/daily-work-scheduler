@@ -109,19 +109,17 @@ let pasteData = function () {
 };
 //write color coding functions
 let colorCode = function () {
-  console.log(timeStamp);
+  console.log(timeStamp[0]);
   for (let i = 0; i < timeStamp.length; i++) {
-    if (timeStamp[i].textContent === currentTime) {
+    if (timeStamp[i].textContent == currentTime) {
       timeStamp[i].parentElement.nextElementSibling.classList.add("present");
-    } else if (timeStamp[i].textContent < currentTime) {
+    } else if (timeStamp[i].textContent > currentTime) {
       timeStamp[i].parentElement.nextElementSibling.classList.add("past");
     } else {
       timeStamp[i].parentElement.nextElementSibling.classList.add("future");
     }
   }
 };
-
-//call functions that are needed to be called globally
 
 // event listeners/execution code
 container.addEventListener("click", test);
