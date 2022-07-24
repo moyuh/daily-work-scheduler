@@ -11,27 +11,10 @@ let input = document.querySelector(".text-area");
 let timeStamp = document.querySelectorAll(".time-stamp");
 let timeNow = document.getElementById("timeNow");
 let addedAlert = document.querySelector(".added");
-
-// moment()
-//   .add(7, "days")
-//   .subtract(1, "months")
-//   .year(2009)
-//   .hours(0)
-//   .minutes(0)
-//   .seconds(0);
-// let saveBtn = document.getElementById("save-text");
-// saveBtn.addEventListener("click", test)
-// function test(event) {
-//     console.log(event.target.previousElementSibling.children[1].value);
-//     console.log("hi");
-// }
-
 //write functions
 //on click of EACH save button SET items to local storage
 
 function test(event) {
-  // console.log("1", event.target.previousElementSibling.textContent.trim())
-  // console.log("2", event.target.previousElementSibling.value.trim())
   if (event.target.matches("button")) {
     if (event.target.previousElementSibling.textContent.trim() === "0800") {
       localStorage.setItem(
@@ -107,8 +90,6 @@ let pasteData = function () {
   document.getElementById("1400").value = window.localStorage.getItem("1400");
   document.getElementById("1500").value = window.localStorage.getItem("1500");
   document.getElementById("1600").value = window.localStorage.getItem("1600");
-  // let newInput = document.createElement("input");
-  // newInput.textContent= storageSchedule;
 };
 //write color coding functions
 let colorCode = function () {
